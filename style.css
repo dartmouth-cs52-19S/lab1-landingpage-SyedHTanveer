@@ -1,0 +1,306 @@
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(38, 38, 38, 1);
+    font-size: 18px;
+}
+
+nav {
+    background-color: rgba(38, 38, 38, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9%;
+    margin: 0px 15px;
+}
+
+
+.nav-left > a:hover {
+  border-bottom: 3px solid rgba(242, 5, 48, 1);;
+}
+
+.nav-left > a:active {
+  border-bottom: 3px solid rgba(242, 5, 48, 1);;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-left>a, .nav-left>div {
+    color: inherit;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+  }
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1em;
+  }
+
+.nav-right>button {
+  background-color: rgba(38, 38, 38, 1);
+  border: solid;
+  color: white;
+  font-size: .8em;
+  height: 50%;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  margin: 0px 10px;
+}
+
+.nav-right>button:hover {
+  border-bottom: 3px solid rgba(242, 5, 48, 1);
+}
+
+.nav-right>button:active {
+  border-bottom: 3px solid rgba(242, 5, 48, 1);
+}
+
+.nav-right>button:focus {
+  outline: 0;
+}
+  
+.nav-right>a, .nav-right>div {
+    padding: 10px 10px 10px 10px;
+  }
+
+.cover {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 10px;
+    
+  }
+.jumbotron > p {
+  display: flex;
+  align-items: center;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border: solid;
+  border-radius: 15px;
+  width: 25%;
+  }
+
+.sign-up > input{
+  background-color: inherit;
+  border: 0px;
+  margin: 0px 10px;
+  width: 75%;
+  color: white;
+}
+
+.sign-up > input:focus{
+  outline: 0;
+}
+
+.sign-up > button {
+  background-color: inherit;
+  padding: 5px 5px;
+  color: rgba(38, 38, 38, 1);
+  border-radius: 15px 0px 0px 15px;
+  width: 25%;
+  color: white;
+}
+
+.sign-up > button:hover {
+  border: 3px solid rgba(242, 5, 48, 1);
+}
+.sign-up > button:active {
+  border: 3px solid rgba(242, 5, 48, 1);
+}
+.sign-up > button:focus {
+  outline: 0;
+}
+#product-title {
+  background-color: rgba(242, 5, 48, 1);
+  font-size: 2em;
+}
+.Product {
+    background-color: rgba(242, 5, 48, 1);
+    display: flex;
+    padding-left: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+.Product > img {
+  height: 50%;
+  width: 52%;
+  margin: 5px 5px;
+}
+#price-title {
+  background-color: rgba(90, 173, 191, 1); 
+  font-size: 2em;
+}
+
+.Price {
+    display: flex;
+    padding-right: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: rgba(90, 173, 191, 1); 
+}
+
+.Price > img {
+  height: 50%;
+  width: 52%;
+  margin: 5px 5px;
+}
+
+.Press-release {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5%;
+  background-color: rgba(90, 131, 140, 1);
+}
+
+#press-title {
+  background-color: rgba(90, 131, 140, 1);
+  font-size: 2em;
+}
+
+.section-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 10px 10px;
+}
+
+footer > i {
+  margin: 10px 10px;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 640px) {
+  nav {
+  background-color: rgba(38, 38, 38, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.nav-left{
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+}
+
+.nav-right{
+  flex-direction: column;
+  margin: 5px 5px;
+}
+
+.nav-right>button {
+  background-color: rgba(38, 38, 38, 1);
+  border: solid;
+  color: white;
+  font-size: .8em;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.sign-up > button:hover {
+  border: 3px solid rgba(242, 5, 48, 1);
+}
+.sign-up > button:active {
+  border: 3px solid rgba(242, 5, 48, 1);
+}
+.Press-release{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5%;
+    background-color: rgba(90, 131, 140, 1);
+  }
+
+.Press-release > div {
+
+}
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+   }
+   .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    border: solid;
+    border-radius: 15px;
+    width: 75%;
+    }
+  
+  .sign-up > input{
+    background-color: inherit;
+    border: 0px;
+    margin: 0px 10px;
+    width: 75%;
+    color: white;
+  }
+  
+  .sign-up > input:focus{
+    outline: 0;
+  }
+  
+  .sign-up > button {
+    background-color: inherit;
+    padding: 5px 5px;
+    color: rgba(38, 38, 38, 1);
+    border-radius: 15px 0px 0px 15px;
+    width: 25%;
+    color: white;
+  }
+  
+  .sign-up > button:hover {
+    border: 3px solid rgba(242, 5, 48, 1);
+  }
+  .sign-up > button:active {
+    border: 3px solid rgba(242, 5, 48, 1);
+  }
+  .sign-up > button:focus {
+    outline: 0;
+  }
+}
